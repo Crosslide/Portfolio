@@ -222,7 +222,7 @@ html {
 
 
 /* Home */
-.btn-5{
+.btn-5 {
     padding: 10px 2px;
     background-color: var(--normal-btn-hover);
     border: none;
@@ -243,7 +243,7 @@ html {
     transition: scroll-top 1s ease-in-out;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
     color: var(--text-color);
 }
 
@@ -259,23 +259,23 @@ html {
     margin: 50px 20px;
 }
 
-.heading-h4,
-.heading-h1 {
+.heading-h4 {
     margin: 0;
     font-size: 20px;
     line-height: 1.5;
 }
 
-.heading-h1,
-span {
+.heading-h1 {
+    font-size: 32px;
+}
+
+.span-home-heading {
     width: max-content;
     font-size: 32px;
     font-weight: 600;
-}
-
-span {
     color: var(--text-span-and-hover);
 }
+
 
 
 .text-home {
@@ -486,7 +486,7 @@ h2 {
     text-align: center;
     width: 650px;
     font-size: 20px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .contact-heading {
@@ -506,7 +506,7 @@ h2 {
 }
 
 .text-social-media {
-    line-height: 3;
+    line-height: 4;
 }
 
 .images {
@@ -524,52 +524,43 @@ h2 {
 
 
 /* Footer */
-
-.footer{
-    margin: 150px 0;
+.footer-content {
+    width: 300px;
+    margin: 150px auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
-.footer-ls{
+.footer-link {
+    line-height: 2;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.links-footer {
+    margin-top: 33px;
+    display: grid;
+    grid-column: 2/2;
+}
+
+.text-footer {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin:0.3rem 0;
 }
 
-.footer-items{
-    margin: .6rem;
+.heading-footer {
+margin-left: 50px;
+    font-size: 24px;
 }
 
-.footer-h2{
+.span-footer {
     font-weight: 600;
-    color: var(--text-span-and-hover);
-    font-size: 32px;
+    color: var(--normal-button);
 }
 
-.footer-content{
-    margin: auto;
-    padding: 1rem;
-}
-
-.footer-links{
-color: var(--text-color);
-text-decoration: none;
-}
-
-.footer-links:hover{
-color: var(--text-span-and-hover);
-}
-
-.heading-footer{
-    margin-left: 10px;
-    font-size: 32px;
-}
 /* Footer */
 
 @media screen and (max-width: 490px) {
-    .btn-5{
+    .btn-5 {
         display: none;
     }
 
@@ -676,24 +667,6 @@ color: var(--text-span-and-hover);
         line-height: 2;
     }
 
-    .footer{
-        margin: 150px 0;
-        display: flex;
-    }
-
-
-    .footer-items{
-        margin: 11px;
-    }
-
-    .footer-links{
-        font-size: 20px;
-    }
-
-
-    .svg-contact{
-        padding-left: 10px;
-    }
     /* Navbar mobile */
     .sidenav {
         display: flex;
